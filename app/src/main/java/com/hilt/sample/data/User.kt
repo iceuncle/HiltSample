@@ -1,7 +1,7 @@
 package com.hilt.sample.data
 
 import dagger.hilt.android.scopes.ActivityScoped
-import javax.inject.Inject
+import javax.inject.Singleton
 
 /**
  * 界面描述：
@@ -12,8 +12,8 @@ import javax.inject.Inject
 @ActivityScoped
 open class User constructor(var id: Int, var name: String, var mood: String) {
 
-    @Inject
-    constructor() : this(1, "新用户", "毫无波澜")
+//    @Inject
+//    constructor() : this(1, "新用户", "毫无波澜")
 
 }
 

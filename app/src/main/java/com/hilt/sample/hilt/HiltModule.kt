@@ -18,7 +18,6 @@ abstract class HiltModule {
 
     @Binds
     abstract fun bindAnalyticsService(analyticsServiceImpl: AnalyticsServiceImpl): AnalyticsService
-
 }
 
 interface AnalyticsService {
@@ -30,5 +29,4 @@ class AnalyticsServiceImpl @Inject constructor() : AnalyticsService {
     override fun analyticsMethods() {
         Log.d("AnalyticsServiceImpl", "analyticsMethods...")
     }
-
 }

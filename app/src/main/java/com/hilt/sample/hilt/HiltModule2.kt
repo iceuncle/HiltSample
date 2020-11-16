@@ -20,9 +20,7 @@ object HiltModule2 {
 
     @Provides
     fun provideUser(): User {
-        val user = User()
-        user.name = "aaa"
-        user.mood = "难过"
+        val user = User(999, "aaa", "难过")
         return user
     }
 
